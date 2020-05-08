@@ -56,6 +56,19 @@ collections:
             name: story
             widget: markdown
 
+  - name: galas
+    label: Virtual Live Galas
+    format: yml
+    extension: yml
+    folder: data/galas/
+    create: true
+    slug: '{{title}}'
+    fields:
+      - {label: Title, name: title, widget: string, required: true}
+      - {label: Host, name: host, widget: string, required: true}
+      - {label: Event Date, name: date, widget: datetime}
+      - {label: video_code, name: video_code, widget: string}
+
   - name: settings
     label: Settings
     files:
