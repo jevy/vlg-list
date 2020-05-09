@@ -2,11 +2,13 @@
 title: Virtual Live Galas List
 ---
 
+p Curious about what Virtual Live Galas look like? We have collected all the public ones we could find.
+
 section.homepage-products.products
   .container
     h2
       | Galas
     .row
-      - data.galas.sort{|a,b| b[1].date <=> a[1].date}.each do | gala |
+      - data.galas.sort {|a,b| b[1].date <=> a[1].date}.each do | gala |
         //to get the actual data:
         = partial 'partials/galas/gala', locals: {gala: gala[1]}
